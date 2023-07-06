@@ -48,7 +48,6 @@ class matrix:
         mtrx_res = matrix([self.cols, self.rows])
         for row in range(self.rows):
             for col in range(self.cols):
-                print("curs ", row, col, "->", col, self.rows - row - 1)
                 mtrx_res.mtrx[col][self.rows - row - 1] = self.mtrx[row][col]
         self.set_mtrx(mtrx_res.mtrx)
 
